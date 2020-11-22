@@ -1,0 +1,80 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: ask syllabus questions
+  steps:
+    - intent: ask_syllabus
+    - action: utter_syllabus_info
+
+- story: ask homework questions
+  steps:
+    - intent: ask_homework
+    - action: utter_homework_info
+
+- story: ask final project questions
+  steps:
+    - intent: ask_final_project
+    - action: utter_final_project_info
+
+- story: survey happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: project_form
+      # - form{"name":"project_form"}
+      # - form{"name":null}
+    - action: utter_slot_values
+    - intent: thank_you
+    - action: utter_goodbye
+
+- story: survey stop
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: project_form
+    - intent: out_of_scope
+    - action: utter_ask_continue
+    - intent: deny
+    - action: action_deactivate_form
+      # - form{"name":null}
+      #- utter_goodbye
+
+- story: no survey
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: ask weekly survey form
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: project_form
+      #- form{"name":"project_form"}
+    - intent: ask_final_project
+    - action: utter_final_project_info
+      #- utter_exercise_info
+      #- form{"name":null}
+      #- utter_goodbye

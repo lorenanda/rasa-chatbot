@@ -1,0 +1,160 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey there
+    - sup
+    - what's up
+    - good morning
+    - good evening
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - goodbye
+    - bye
+    - bye bye
+    - see you later
+    - have a nice day
+    - see you around
+    - see you later
+    - good night
+
+- intent: thank_you
+  examples: |
+    - thanks
+    - thank you
+    - thanks bye
+    - great
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - yay
+    - yas
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure 
+    - yeah
+    - yea
+    - cool
+    - fine
+    - ok
+    - okay
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no thanks
+    - absolutely not 
+    - nah
+    - nope
+    - nay
+
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do 
+    - wait
+    - I changed my mind 
+    - that's not helpful
+    - how old are you 
+    - order a pizza
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you alive?
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: ask_syllabus
+  examples: |
+    - What are we learning this week?
+    - What are we learning today?
+    - Whats the topic of this week?
+    - What is this week's project?
+    - What project are we doing this week?
+    - What is this week about?
+    - What's the plan for this week?
+    - What's the plan for today?
+
+- intent: ask_homework
+  examples: |
+    - Where can I submit my homework?
+    - Where do I submit my assignment?
+    - How do I submit my homework?
+    - What is the homework?
+    - What is the assignment?
+    - What do I have to do?
+
+- intent: ask_final_project
+  examples: |
+    - When is the final project presentation?
+    - When is the graduation?
+    - What can I do for the final project?
+    - What are some ideas for a final project?
+    - Give me some ideas of a final project.
+    - What should my final project be about?
+    - Where can I see example of final projects?
+    - What have other students done for their final project?
+    - What's an example of a final project?
+
+- intent: inform
+  examples: |
+    - [8 hours](work)
+    - [few hours](work)
+    - about [6 hours](work)
+    - around [10 hours](work)

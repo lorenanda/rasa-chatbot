@@ -1,0 +1,16 @@
+[
+  {
+    "text": "[few hours]",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sleep",
+        "start": 5,
+        "end": 10,
+        "confidence_entity": 0.7381157279014587,
+        "value": "hours",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - thank_you
+  - affirm
+  - deny
+  - out_of_scope
+  - bot_challenge
+  - ask_syllabus
+  - ask_homework
+  - ask_final_project
+  - mood_great
+  - mood_unhappy
+  - inform
+
+slots: 
+  work:
+    type: unfeaturized
+  interest:
+    type: unfeaturized
+  difficulty:
+    type: unfeaturized
+  assistance:
+    type: unfeaturized
+
+entities:
+  - work
+  - interest
+  - difficulty
+  - assistance
+
+responses:
+  utter_greet:
+  - text: "Hi! It's time for the weekly project review. Would you like to answer a few question about your experiences this week?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/5TyE3HG.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye!"
+
+  utter_iamabot:
+  - text: "I am a bot created by Lorena and powered by Rasa."
+
+  utter_homework_info:
+  - text: "You have to submit your assignments in the GitHub repository student-code."
+
+  utter_syllabus_info:
+  - text: "You can find information about the coursework and schedule for the current week here: https://spiced.space/stochastic-sage/schedule#current-week"
+  
+  utter_final_project_info:
+  - text: "Check out some examples of projects by former students here: https://krspiced.pythonanywhere.com/chapters/final_project/README.html"
+
+  utter_ask_confirm_project:
+  - text: "Did you finish this week's project on time?"
+
+  utter_ask_work:
+  - text: "On average, how many hours per day did you work/study this week?"
+
+  utter_ask_interest:
+  - text: "How interesting was this week's project for you?"
+
+  utter_ask_difficulty:
+  - text: "How interesting was this week's project for you?"
+
+  utter_ask_teachers:
+  - text: "How helpful were the teachers this week?"
+
+  utter_slot_values:
+  - text: "Here's your weekly log:\n
+          - Finished project: {confirm_project}\n
+          - Avg. working hours per day: {work}\n
+          - Level of interest: {interest}\n
+          - Level of difficulty: {difficulty}\n
+          - Help received: {assistance}"
+
+forms:
+  - project_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

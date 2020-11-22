@@ -1,0 +1,6 @@
+version: "2.0"
+stories:
+- story: bot challenge (/tmp/tmpfw47dj3z/2bcf12b73c354fbbb1a996c56914938e_test_stories.yml)
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot  # predicted: utter_goodbye
