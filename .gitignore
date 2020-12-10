@@ -1,6 +1,6 @@
 .vscode/
 actions/__pycache__/
-.rasa/
+.rasa_env/
 results/
 models/
 config.py 
