@@ -15,6 +15,15 @@ intents:
   - mood_unhappy
   - inform
 
+entities:
+  - work
+  - interest
+  - difficulty
+  - assistance
+
+forms:
+  - project_form
+  
 slots: 
   work:
     type: unfeaturized
@@ -24,12 +33,6 @@ slots:
     type: unfeaturized
   assistance:
     type: unfeaturized
-
-entities:
-  - work
-  - interest
-  - difficulty
-  - assistance
 
 responses:
   utter_greet:
@@ -88,12 +91,6 @@ responses:
           - Level of interest: {interest}\n
           - Level of difficulty: {difficulty}\n
           - Help received: {assistance}"
-
-forms:
-  - project_form
-
-entities:
-- name
 
 session_config:
   session_expiration_time: 60
