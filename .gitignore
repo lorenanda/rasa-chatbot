@@ -1,8 +1,8 @@
-.vscode/*
+.vscode/
 actions/__pycache__/
-.venv/*
-results/*
-models/*
+.rasa/
+results/
+models/
 config.py 
 ngrok
 plan.md

@@ -117,8 +117,8 @@ nlu:
     - not good
     - not very good
     - extremly sad
-    - so saad
     - so sad
+    - I feel overwhelmed
 
 - intent: ask_syllabus
   examples: |
@@ -158,3 +158,6 @@ nlu:
     - [few hours](work)
     - about [6 hours](work)
     - around [10 hours](work)
+    - quite [interesting](interest)
+    - I am [interested](interest) in this topic
+    - really [boring](interest)

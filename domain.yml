@@ -33,7 +33,7 @@ entities:
 
 responses:
   utter_greet:
-  - text: "Hi! It's time for the weekly project review. Would you like to answer a few question about your experiences this week?"
+  - text: "Hi!"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -50,6 +50,9 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot created by Lorena and powered by Rasa."
+
+  utter_survey_start:
+  - text: "Hi! It's time for the weekly project review. Would you like to answer a few question about your experiences this week?"
 
   utter_homework_info:
   - text: "You have to submit your assignments in the GitHub repository student-code."
@@ -75,6 +78,9 @@ responses:
   utter_ask_teachers:
   - text: "How helpful were the teachers this week?"
 
+  utter_ask_continue:
+  - text: "Would you like to continue?"
+
   utter_slot_values:
   - text: "Here's your weekly log:\n
           - Finished project: {confirm_project}\n
@@ -85,6 +91,9 @@ responses:
 
 forms:
   - project_form
+
+entities:
+- name
 
 session_config:
   session_expiration_time: 60
