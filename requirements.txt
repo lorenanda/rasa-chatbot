@@ -1,3 +1,2 @@
 rasa
 rasa-sdk
-rasa-x -i https://pypi.rasa.com/simple
