@@ -35,6 +35,7 @@ nlu:
     - thank you
     - thanks bye
     - great
+    - cool
 
 - intent: affirm
   examples: |
@@ -49,7 +50,6 @@ nlu:
     - sure 
     - yeah
     - yea
-    - cool
     - fine
     - ok
     - okay
