@@ -1,5 +1,9 @@
-config.py
+.vscode/
+actions/__pycache__/
+.rasa/
+results/
 models/
-venv/
-plan.md
+config.py 
 ngrok
+plan.md
+tutorial.txt
