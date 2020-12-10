@@ -1,4 +1,0 @@
-python==3.8
-rasa==2.1
-rasa-sdk
-rasa-x

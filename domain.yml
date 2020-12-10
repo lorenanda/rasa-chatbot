@@ -48,9 +48,6 @@ responses:
   utter_goodbye:
   - text: "Bye!"
 
-  utter_ask_continue:
-  - text: "Would you like to continue with the survey?"
-
   utter_iamabot:
   - text: "I am a bot created by Lorena and powered by Rasa."
 
