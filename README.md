@@ -1,4 +1,6 @@
 ## A Rasa chatbot for student support
+*in progress...*
+
 
 Meet **Saige**, a chatbot designed to help the students of a Data Science bootcamp throughout their studies.
 It has two main functionalities:
